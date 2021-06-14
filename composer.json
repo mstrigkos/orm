@@ -1,5 +1,5 @@
 {
-    "name": "doctrine/orm",
+    "name": "mstrigkos/orm",
     "type": "library",
     "description": "Object-Relational-Mapper for PHP",
     "keywords": ["orm", "database"],
