@@ -2637,7 +2637,7 @@ class UnitOfWork implements PropertyChangedListener
                         $class->reflFields[$field]->setValue($entity, null);
                         $this->originalEntityData[$oid][$field] = null;
 
-                        continue;
+                        continue 2;
                     }
 
                     if ( ! isset($hints['fetchMode'][$class->name][$field])) {
@@ -2902,7 +2902,7 @@ class UnitOfWork implements PropertyChangedListener
 
         return isset($values[$class->identifier[0]]) ? $values[$class->identifier[0]] : null;
     }
- 
+
     /**
      * Tries to find an entity with the given identifier in the identity map of
      * this UnitOfWork.
